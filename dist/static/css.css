@@ -1,0 +1,17 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}fieldset,img{border:0}:focus{outline:0}address,caption,cite,code,dfn,em,th,var,optgroup{font-style:normal;font-weight:normal}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}abbr,acronym{border:0;font-variant:normal}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}code,kbd,samp,tt{font-size:100%}input,button,textarea,select{*font-size:100%}body{line-height:1.5}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th{text-align:left}sup,sub{font-size:100%;vertical-align:baseline}:link,:visited ,ins{text-decoration:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+/* CSS Document */
+.clearfix{margin-right:auto;margin-left:auto;*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}
+b,em,i{font-style:normal;font-weight:normal;}
+body{margin:0;font-family:"Microsoft Yahei",Arial,Tahoma,Helvetica,"SimSun","Hiragino Sans GB",sans-serif;font-size:14px;line-height:20px;color:#4c4c4c;background-color:#fff;position:relative;}
+html,body{position:relative;overflow-x:hidden;}
+html{height:100%;}body{min-height:100%;}
+button,input,select,textarea,th{background:#fff;font-size:12px;line-height:1.5em;font-family:"Microsoft Yahei",Arial,Tahoma,Helvetica,"SimSun","Hiragino Sans GB",sans-serif;}
+input[type="submit"],input[type="reset"],input[type="password"],input[type="button"],input[type="text"],button{-webkit-appearance:none;}/*取消苹果渲染*/
+a{color:#4c4c4c;text-decoration:none;}
+a:hover,a:focus{transition:color 150ms ease-in 0ms,background-color 150ms ease-in 150ms;}
+.rotate360:hover{transform:rotate(360deg);}
+.rotate360{transition:all 0.5s ease-in-out;}
+/*  */
+.disflex{display: box;display: flex;}
+.flexItem{flex: 1;}

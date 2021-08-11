@@ -1,0 +1,651 @@
+/*** Nokersang 2016-11 ***/
+
+/* CSS Reset */
+html,body,iframe,div,span,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,a,strong,img,form,fieldset,legend,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}body{line-height:1;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}select,input,button{vertical-align:middle;}table{border-collapse:collapse;border-spacing:0;}html{zoom:expression(function(ele){ele.style.zoom="1";document.execCommand("BackgroundImageCache",false,true);}(this));}*html,*html body{background-image:url(about:blank);background-attachment:fixed;}
+
+/* Blank */
+.bk1,.bk2,.bk3,.bk4,.bk5,.bk6,.bk7,.bk8,.bk9,.bk10,.bk11,.bk12,.bk13,.bk14,.bk15,.bk16,.bk17,.bk18,.bk19,.bk20{clear:both;font:1px/1px Arial;overflow:hidden;}.bk1{height:1px;}.bk2{height:2px;}.bk3{height:3px;}.bk4{height:4px;}.bk5{height:5px;}.bk6{height:6px;}.bk7{height:7px;}.bk8{height:8px;}.bk9{height:9px;}.bk10{height:10px;}.bk11{height:11px;}.bk12{height:12px;}.bk13{height:13px;}.bk14{height:14px;}.bk15{height:15px;}.bk16{height:16px;}.bk17{height:17px;}.bk18{height:18px;}.bk19{height:19px;}.bk20{height:20px;}
+
+/* Level */
+.lv{display:inline-block;width:32px;height:11px;background:url(http://s.doyo.cn/material/images/box/level_bg.png) 0 0 no-repeat;font:1px/1 Arial;}
+.lv1{background-position:0 0;}.lv2{background-position:-50px 0;}.lv3{background-position:-100px 0;}.lv4{background-position:-150px 0;}.lv5{background-position:-200px 0;}.lv6{background-position:-250px 0;}.lv7{background-position:-300px 0;}.lv8{background-position:-350px 0;}.lv9{background-position:-400px 0;}.lv10{background-position:-450px 0;}.lv11{background-position:0 -50px;}.lv12{background-position:-50px -50px;}.lv13{background-position:-100px -50px;}.lv14{background-position:-150px -50px;}.lv15{background-position:-200px -50px;}.lv16{background-position:-250px -50px;}.lv17{background-position:-300px -50px;}.lv18{background-position:-350px -50px;}.lv19{background-position:-400px -50px;}.lv20{background-position:-450px -50px;}.lv21{background-position:0 -100px;}.lv22{background-position:-50px -100px;}.lv23{background-position:-100px -100px;}.lv24{background-position:-150px -100px;}.lv25{background-position:-200px -100px;}.lv26{background-position:-250px -100px;}.lv27{background-position:-300px -100px;}.lv28{background-position:-350px -100px;}.lv29{background-position:-400px -100px;}.lv30{background-position:-450px -100px;}.lv31{background-position:0 -150px;}.lv32{background-position:-50px -150px;}.lv33{background-position:-100px -150px;}.lv34{background-position:-150px -150px;}.lv35{background-position:-200px -150px;}.lv36{background-position:-250px -150px;}.lv37{background-position:-300px -150px;}.lv38{background-position:-350px -150px;}.lv39{background-position:-400px -150px;}.lv40{background-position:-450px -150px;}.lv41{background-position:0 -200px;}.lv42{background-position:-50px -200px;}.lv43{background-position:-100px -200px;}.lv44{background-position:-150px -200px;}.lv45{background-position:-200px -200px;}.lv46{background-position:-250px -200px;}.lv47{background-position:-300px -200px;}.lv48{background-position:-350px -200px;}.lv49{background-position:-400px -200px;}.lv50{background-position:-450px -200px;}.lv51{background-position:0 -250px;}.lv52{background-position:-50px -250px;}.lv53{background-position:-100px -250px;}.lv54{background-position:-150px -250px;}.lv55{background-position:-200px -250px;}.lv56{background-position:-250px -250px;}.lv57{background-position:-300px -250px;}.lv58{background-position:-350px -250px;}.lv59{background-position:-400px -250px;}.lv60{background-position:-450px -250px;}.lv61{background-position:0 -300px;}.lv62{background-position:-50px -300px;}.lv63{background-position:-100px -300px;}.lv64{background-position:-150px -300px;}.lv65{background-position:-200px -300px;}.lv66{background-position:-250px -300px;}.lv67{background-position:-300px -300px;}.lv68{background-position:-350px -300px;}.lv69{background-position:-400px -300px;}.lv70{background-position:-450px -300px;}.lv71{background-position:0 -350px;}.lv72{background-position:-50px -350px;}.lv73{background-position:-100px -350px;}.lv74{background-position:-150px -350px;}.lv75{background-position:-200px -350px;}.lv76{background-position:-250px -350px;}.lv77{background-position:-300px -350px;}.lv78{background-position:-350px -350px;}.lv79{background-position:-400px -350px;}.lv80{background-position:-450px -350px;}.lv81{background-position:0 -400px;}.lv82{background-position:-50px -400px;}.lv83{background-position:-100px -400px;}.lv84{background-position:-150px -400px;}.lv85{background-position:-200px -400px;}.lv86{background-position:-250px -400px;}.lv87{background-position:-300px -400px;}.lv88{background-position:-350px -400px;}.lv89{background-position:-400px -400px;}.lv90{background-position:-450px -400px;}.lv91{background-position:0 -450px;}.lv92{background-position:-50px -450px;}.lv93{background-position:-100px -450px;}.lv94{background-position:-150px -450px;}.lv95{background-position:-200px -450px;}.lv96{background-position:-250px -450px;}.lv97{background-position:-300px -450px;}.lv98{background-position:-350px -450px;}.lv99{background-position:-400px -450px;}
+
+/* Popup layer */
+#doyo_popup_shade_layer{position:fixed;_position:absolute;z-index:10;top:0;left:0;width:100%;height:100%;_height:expression(eval(document.body.offsetHeight>document.documentElement.clientHeight?document.body.offsetHeight:document.documentElement.clientHeight));background:#000;filter:alpha(opacity=30);opacity:0.3;}
+#doyo_popup_content_layer{position:fixed;_position:absolute;z-index:10;top:50%;left:50%;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight*0.5));}
+
+body{background:#F9F9F9;font-family:Arial;}
+
+noscript div{display:block;width:auto;height:28px;background:#FFA;font:bold 14px/2 "Microsoft YaHei";color:#F00;text-align:center;}
+noscript div a{color:#39E;}
+noscript div a:hover{color:#F60;}
+
+#game_info{width:920px;height:auto;margin:16px auto;padding:14px 19px 0 19px;border:1px solid #EEE;background:#FFF;font-family:"Microsoft YaHei";}
+#game_info .l_box{float:left;width:114px;height:auto;margin:5px 20px 0 0;background:#EEE;}
+#game_info .l_box img{display:block;width:114px;height:158px;}
+#game_info .l_box img.s{width:100px;height:140px;margin:35px auto;}
+#game_info .m_box{float:left;width:580px;height:auto;}
+#game_info .r_box{float:right;width:206px;height:auto;}
+#game_info .title{height:33px;margin:0 0 3px 0;font:22px/1.5 "Microsoft YaHei";color:#444;overflow:hidden;}
+#game_info .title em{display:inline-block;font-style:normal;font:12px/1.5 Helvetica;color:#888;}
+#game_info a.website{display:inline-block;width:90px;height:21px;margin:7px 16px 0 0;border:1px solid #32967E;border-radius:3px;font:14px/1.5 "Microsoft YaHei";color:#32967E;text-align:center;text-decoration:none;}
+#game_info a.website:hover{border:1px solid #F00;color:#F00;}
+#game_info a.register{display:inline-block;width:90px;height:21px;margin:7px 16px 0 0;border:1px solid #FF8726;border-radius:3px;font:14px/1.5 "Microsoft YaHei";color:#FF8726;text-align:center;text-decoration:none;}
+#game_info a.register:hover{border:1px solid #F00;color:#F00;}
+#game_info .tag{float:left;font-size:12px;line-height:2;color:#777;overflow:hidden;}
+#game_info .danji .tag{width:240px;height:24px;}
+#game_info .wangluo .tag{width:170px;height:27px;}
+#game_info .wangye .tag{width:240px;height:28px;}
+#game_info .tag_b{width:420px;margin:2px 0;}
+#game_info .tag a{display:inline-block;margin:0 6px 0 0;color:#777;}
+#game_info .tag a:hover{color:#F60;}
+#game_info .tag_b a{margin:0 12px 0 0;}
+#game_info .m_box .line{float:left;width:580px;height:6px;border-top:1px solid #EEE;font:1px/1 Arial;}
+#game_info .check{float:left;width:580px;height:auto;padding:0 0 6px 0;font-size:12px;line-height:2;color:#444;}
+#game_info .check em{font-style:normal;}
+#game_info .check em .r{color:#3889EF;}
+#game_info .check em .m{color:#22AC38;}
+#game_info .check em .n{color:#FF0B0A;}
+#game_info .check em .u{color:#999;}
+#game_info .check em strong{margin:0 1px;}
+#game_info .check a{color:#18D;}
+#game_info .check a:hover{color:#F60;}
+#game_info .down{float:left;width:715px;height:42px;position: relative;left: -135px;}
+#game_info .down a.buy_now{display:inline-block;width:120px;height:38px;margin:0 12px 0 0;padding:4px 20px 0 20px;border-radius:3px;background:#3375D6;font-size:16px;line-height:1.1;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#game_info .down a.buy_now:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_info .down a.buy_now em{display:inline-block;font-style:normal;font-size:12px;line-height:1.1;font-weight:normal;cursor:pointer;}
+
+#game_info .down a.speedDown{display:inline-block;width:160px;height:42px;margin:0 12px 0 0;border-radius:3px;background:#3eacff;font-size:18px;line-height:42px;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#game_info .down a.speedDown i {display: inline-block;width: 24px;height: 24px;background: url(../images/game_bg.png) -36px -846px no-repeat;margin: 9px 11px 0 0;vertical-align: top;}
+#game_info .down a.speedDown:hover{filter:alpha(opacity=80);opacity:0.8;}
+
+#game_info .down a.down_now{display:inline-block;width:160px;height:42px;margin:0 12px 0 0;border-radius:3px;background:#FF8726;font-size:18px;line-height:42px;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#game_info .down a.down_now:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_info .down a.down_now i{display: inline-block;width: 24px;height: 24px;background: url(../images/game_bg.png) -75px -846px no-repeat;margin: 9px 11px 0 0;vertical-align: top;}
+#game_info .down span.empty{display:inline-block;width:120px;height:38px;margin:0 12px 0 0;padding:4px 20px 0 20px;border-radius:3px;background:#CCC;font-size:24px;line-height:1.4;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;cursor:default;}
+#game_info .down .other{display:inline-block;width:auto;height:40px;padding:1px 0;font-size:12px;line-height:1.7;color:#888;vertical-align:middle;}
+#game_info .play a.play_now{display:inline-block;width:120px;height:38px;margin:0 12px 0 0;padding:4px 20px 0 20px;border-radius:3px;background:#3375D6;font-size:24px;line-height:1.4;font-weight:bold;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#game_info .play a.play_now:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_info .play a.new_server{display:inline-block;position:relative;z-index:0;width:156px;height:38px;margin:0 12px 0 0;padding:4px 2px 0 2px;border-radius:3px;background:#FF8726;font-size:16px;line-height:1.1;font-weight:bold;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#game_info .play a.new_server:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_info .play a.new_server em{display:inline-block;font-style:normal;font-size:12px;line-height:1.1;font-weight:normal;cursor:pointer;}
+#game_info .play a.new_server span{position:absolute;z-index:1;top:-5px;right:-4px;width:35px;height:19px;background:url(../images/game_bg.png) 0 -750px no-repeat;}
+#game_info .r_box .line{float:right;width:13px;height:14px;margin:2px 0 0 12px;border-left:1px solid #CCC;font:1px/1 Arial;}
+#game_info .r_box .collect{float:right;width:auto;height:18px;padding:0 0 0 17px;background:url(../images/game_bg.png) -100px 4px no-repeat;font-size:12px;line-height:1.5;color:#888;text-decoration:none;}
+#game_info .r_box .collect:hover{background:url(../images/game_bg.png) -100px -46px no-repeat;color:#3EBD92;}
+
+#shouji_game_info{width:920px;height:auto;margin:16px auto;padding:14px 19px 0 19px;border:1px solid #EEE;background:#FFF;}
+#shouji_game_info .l_box{float:left;width:120px;height:auto;margin:5px 0 0 0;}
+#shouji_game_info .l_box img{display:block;width:96px;height:96px;margin:2px;}
+#shouji_game_info .m_box{float:left;width:580px;height:auto;}
+#shouji_game_info .r_box{float:right;width:210px;height:auto;}
+#shouji_game_info .title{height:33px;font:22px/1.5 "Microsoft YaHei";color:#444;overflow:hidden;}
+#shouji_game_info .title a{display:inline-block;width:58px;height:22px;margin:0 0 0 12px;border:1px solid;border-radius:3px;font:14px/22px "Microsoft YaHei";text-align:center;text-decoration:none;vertical-align:middle;}
+#shouji_game_info .title a:hover{background:#F8F8F8;border-color:#F60;color:#F60;}
+#shouji_game_info .title .p_jiuyou{border-color:#FF9090;color:#FF9090;}
+#shouji_game_info .title .p_jiuyou_active{background:#FF9090;color:#FFF;}
+#shouji_game_info .title .p_baidu{border-color:#66A7FF;color:#66A7FF;}
+#shouji_game_info .title .p_baidu_active{background:#66A7FF;color:#FFF;}
+#shouji_game_info .title .p_360{border-color:#82C58B;color:#82C58B;}
+#shouji_game_info .title .p_360_active{background:#82C58B;color:#FFF;}
+#shouji_game_info .intro{font:14px/2 "Microsoft YaHei";color:#999;}
+#shouji_game_info .other{font:12px/1.7 "Microsoft YaHei";color:#999;}
+#shouji_game_info .line{float:left;width:13px;height:14px;margin:2px 0 0 12px;border-left:1px solid #CCC;font:1px/1 Arial;}
+#shouji_game_info .collect{float:left;width:auto;height:18px;padding:0 0 0 17px;background:url(../images/game_bg.png) -100px 4px no-repeat;font-size:12px;line-height:1.5;color:#888;text-decoration:none;}
+#shouji_game_info .collect:hover{background:url(../images/game_bg.png) -100px -46px no-repeat;color:#3EBD92;}
+#shouji_game_info .bdsharebuttonbox{float:left;}
+#shouji_game_info a.down_now{display:inline-block;width:120px;height:38px;margin:0 0 0 40px;padding:4px 20px 0 20px;border-radius:3px;background:#3476D7;font-size:24px;line-height:1.4;font-weight:bold;color:#FFF;text-align:center;text-decoration:none;vertical-align:middle;}
+#shouji_game_info a.down_now:hover{filter:alpha(opacity=80);opacity:0.8;}
+
+/* Baidu Share Reset */
+.bdsharebuttonbox{float:right;padding:0 10px 0 0;}
+.bdsharebuttonbox a.bds_more{float:left;height:22px;margin:0;padding:0 0 0 16px;background:url(../images/game_bg.png) -100px -96px no-repeat;font-size:12px;line-height:1.5;color:#888;text-decoration:none;}
+.bdsharebuttonbox a.bds_more:hover{background:url(../images/game_bg.png) -100px -146px no-repeat;color:#3EBD92;}
+.bdshare_popup_box{margin:-5px 0 0 -188px;}
+.bdshare_popup_bg{margin:-5px 0 0 -188px;}
+
+#doyo_vote_goodinbad{width:200px;height:180px;padding:0 0 0 9px;background:url(../images/doyo_vote_goodinbad_bg.png) 0 0 no-repeat;_background-position:2px 2px;text-align:center;}
+#doyo_vote_goodinbad .result{width:200px;height:34px;_padding:4px 0 0 2px;font-size:12px;line-height:2;color:#999;}
+#doyo_vote_goodinbad a.bt{display:inline-block;width:50px;height:24px;margin:0 8px;padding:5px 0;border-radius:3px;color:#FFF;text-decoration:none;}
+#doyo_vote_goodinbad a.bt:hover{filter:alpha(opacity=80);opacity:0.8;}
+#doyo_vote_goodinbad .good{background:#03C67E;}
+#doyo_vote_goodinbad .general{background:#FEB61C;}
+#doyo_vote_goodinbad .bad{background:#F73F51;}
+
+#doyo_vote_star{position:relative;z-index:0;width:160px;height:66px;margin:0 0 0 40px;}
+#doyo_vote_star .tips{display:none;position:absolute;z-index:1;top:-3px;left:-5px;width:108px;height:24px;border:1px solid #EEE;border-radius:3px;color:#F60;font:12px/2 "Microsoft YaHei";text-align:center;}
+#doyo_vote_star .cover{display:none;position:absolute;z-index:1;top:30px;left:0;width:100px;height:20px;cursor:pointer;}
+#doyo_vote_star .star{position:absolute;z-index:1;top:30px;left:0;width:100px;height:20px;background:url(../images/game_bg.png) 0 -900px no-repeat;}
+#doyo_vote_star .star em{display:block;width:0;height:20px;background:url(../images/game_bg.png) 0 -950px no-repeat;}
+#doyo_vote_star .word{position:absolute;z-index:1;top:0;left:100px;width:70px;height:18px;font:bold 12px/1.5 "Microsoft YaHei";color:#777;text-align:center;}
+#doyo_vote_star .score{position:absolute;z-index:1;top:20px;left:100px;width:70px;height:40px;font:36px/1.1 Arial;color:#F24949;text-align:center;}
+
+#game_nav{width:958px;height:55px;margin:0 auto 12px auto;border:1px solid #EEE;background:#FFF;}
+#game_nav a{float:left;position:relative;z-index:0;height:53px;border:1px solid #FFF;color:#888;text-decoration:none;cursor:pointer;}
+#game_nav a .i{position:absolute;z-index:1;top:13px;left:16px;}
+#game_nav a .n{position:absolute;z-index:1;top:7px;font:16px/1.5 "Microsoft YaHei";}
+#game_nav a .s{position:absolute;z-index:1;top:28px;font:12px/1.5 "Microsoft YaHei";}
+#game_nav a.detail{width:140px;}#game_nav a.detail .i{width:26px;height:30px;background:url(../images/game_bg.png) 0 -50px no-repeat;}#game_nav a.detail .n,#game_nav a.detail .s{left:52px;}
+#game_nav a.comment{width:120px;}#game_nav a.comment .i{width:28px;height:29px;background:url(../images/game_bg.png) 0 -100px no-repeat;}#game_nav a.comment .n,#game_nav a.comment .s{left:54px;}
+#game_nav a.bbs{width:125px;}#game_nav a.bbs .i{width:33px;height:29px;background:url(../images/game_bg.png) 0 -150px no-repeat;}#game_nav a.bbs .n,#game_nav a.bbs .s{left:59px;}
+#game_nav a.strategy{width:108px;}#game_nav a.strategy .i{width:23px;height:28px;background:url(../images/game_bg.png) 0 -200px no-repeat;}#game_nav a.strategy .n,#game_nav a.strategy .s{left:49px;}
+#game_nav a.video{width:113px;}#game_nav a.video .i{width:28px;height:29px;background:url(../images/game_bg.png) 0 -250px no-repeat;}#game_nav a.video .n,#game_nav a.video .s{left:54px;}
+#game_nav a.news{width:110px;}#game_nav a.news .i{width:25px;height:29px;background:url(../images/game_bg.png) 0 -300px no-repeat;}#game_nav a.news .n,#game_nav a.news .s{left:51px;}
+#game_nav a.tools{width:102px;}#game_nav a.tools .i{width:24px;height:29px;background:url(../images/game_bg.png) 0 -350px no-repeat;}#game_nav a.tools .n,#game_nav a.tools .s{left:50px;}
+#game_nav a.hardware{width:124px;}#game_nav a.hardware .i{width:34px;height:29px;background:url(../images/game_bg.png) 0 -400px no-repeat;}#game_nav a.hardware .n,#game_nav a.hardware .s{left:60px;}
+#game_nav a:hover{color:#3EBD92;}
+#game_nav a:hover .i{background-position-x:-50px;}
+#game_nav a.active{border:1px solid #3EBD92;color:#3EBD92;}
+#game_nav a.active .i{background-position-x:-50px;}
+
+#page_box{width:960px;height:auto;margin:0 auto;}
+#game_left{float:left;width:710px;height:auto;}
+#game_right{float:right;width:240px;height:auto;}
+
+#game_fahao{width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_fahao .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_fahao .title em{display:inline-block;width:22px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -650px no-repeat;vertical-align:middle;}
+#game_fahao .content{width:800px;height:auto;border-left:1px solid #EEE;overflow:hidden;}
+#game_fahao .content a{float:left;display:block;width:150px;height:130px;padding:13px 13px 0 13px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;font:12px/1.7 "Microsoft YaHei";color:#666;text-decoration:none;cursor:pointer;}
+#game_fahao .content a:hover{background:#EEF3F3;color:#F60;}
+#game_fahao .content a img{display:block;width:150px;height:100px;margin:0 auto 3px auto;}
+
+#game_server{position:relative;z-index:0;width:708px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_server .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_server .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -100px -650px no-repeat;vertical-align:middle;}
+#game_server .item{height:24px;padding:8px 24px;font:12px/2 "Microsoft YaHei";color:#555;}
+#game_server .item .p{float:left;width:140px;}
+#game_server .item .n{float:left;width:140px;}
+#game_server .item .r{float:left;width:200px;font-weight:bold;}
+#game_server .item a.j{float:right;color:#F60;}
+#game_server .item a.j:hover{color:#F00;}
+#game_server .item_th{background:#EEE;color:#888;}
+#game_server .item_th .p{}
+#game_server .item_th .n{}
+#game_server .item_th .r{font-weight:normal;}
+
+#game_screenshot{position:relative;z-index:1;width:710px;height:400px;margin:0 0 12px 0;}
+#game_screenshot .box{position:absolute;z-index:1;width:710px;height:400px;background:#EEE;overflow:hidden;}
+#game_screenshot .box .list{position:absolute;z-index:2;left:0;top:0;width:20000px;height:422px;}
+#game_screenshot .box .list a{float:left;display:block;width:710px;height:400px;overflow:hidden;}
+#game_screenshot .box .bar{position:absolute;z-index:2;left:5%;bottom:3px;width:90%;height:auto;font:1px/1 Arial;text-align:center;}
+#game_screenshot .box .bar em{display:inline-block;width:8px;height:8px;margin:1px;border:1px solid #EEE;border-radius:50%;background:#3EBD92;font:1px/1 Arial;filter:alpha(opacity=50);opacity:0.5;overflow:hidden;}
+#game_screenshot .box .bar em.active{background:#F60;}
+#game_screenshot .box .l{position:absolute;z-index:2;top:0;left:0;width:30%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;cursor:url(../images/cur_prev.cur),auto;_cursor:url(../images/cur_prev_8.cur),auto;}
+#game_screenshot .box .la{position:absolute;z-index:2;top:172px;left:0;width:32px;height:64px;background:url(../images/game_bg.png) -91px -180px no-repeat #3EBD92;filter:alpha(opacity=50);opacity:0.5;}
+#game_screenshot .box .la_hover{filter:alpha(opacity=100);opacity:1;}
+#game_screenshot .box .r{position:absolute;z-index:2;top:0;left:70%;width:30%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;cursor:url(../images/cur_next.cur),auto;_cursor:url(../images/cur_next_8.cur),auto;}
+#game_screenshot .box .ra{position:absolute;z-index:2;top:172px;right:0;width:32px;height:64px;background:url(../images/game_bg.png) -89px -230px no-repeat #3EBD92;filter:alpha(opacity=50);opacity:0.5;}
+#game_screenshot .box .ra_hover{filter:alpha(opacity=100);opacity:1;}
+#game_screenshot .box .lr{position:absolute;z-index:2;top:0;left:0;width:100%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;}
+#game_screenshot .box .m{position:absolute;z-index:2;top:0;left:0;width:100%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;cursor:url(../images/cur_zoom_in.cur),auto;_cursor:url(../images/cur_zoom_in_8.cur),auto;}
+#game_screenshot .box_b .list a{width:960px;height:485px;}
+#game_screenshot .box_b .m{cursor:url(../images/cur_zoom_out.cur),auto;_cursor:url(../images/cur_zoom_out_8.cur),auto;}
+
+#shouji_game_screenshot{width:708px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#shouji_game_screenshot .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#shouji_game_screenshot .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) 0 -700px no-repeat;vertical-align:middle;}
+#shouji_game_screenshot .box{position:relative;z-index:0;padding:20px 0 0 0;overflow:hidden;}
+#shouji_game_screenshot .box img{display:block;width:0;height:0;}
+#shouji_game_screenshot .box img.only{margin:0 auto 20px auto;}
+#shouji_game_screenshot .box img.fly{position:absolute;z-index:0;}
+#shouji_game_screenshot .box .bar{position:absolute;z-index:0;left:5%;bottom:17px;width:90%;height:auto;font:1px/1 Arial;text-align:center;}
+#shouji_game_screenshot .box .bar em{display:inline-block;width:10px;height:10px;margin:1px;border-radius:50%;background:#3EBD92;font:1px/1 Arial;filter:alpha(opacity=50);opacity:0.5;overflow:hidden;}
+#shouji_game_screenshot .box .bar em.active{background:#F60;}
+#shouji_game_screenshot .box .l{position:absolute;z-index:3;top:0;left:0;width:50%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;cursor:url(../images/cur_prev.cur),auto;_cursor:url(../images/cur_prev_8.cur),auto;}
+#shouji_game_screenshot .box .r{position:absolute;z-index:3;top:0;right:0;width:50%;height:100%;background:url(http://s.doyo.cn/s.gif) 0 0 repeat;cursor:url(../images/cur_next.cur),auto;_cursor:url(../images/cur_next_8.cur),auto;}
+
+#game_introduction{width:708px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_introduction .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_introduction .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) 0 -500px no-repeat;vertical-align:middle;}
+#game_introduction .content{height:auto;padding:12px 24px;font:12px/2 "Microsoft YaHei";color:#888;}
+
+#game_series{position:relative;z-index:0;width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_series .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_series .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -500px no-repeat;vertical-align:middle;}
+#game_series .content{width:800px;height:auto;border:solid #EEE;border-width:0 0 0 1px;overflow:hidden;}
+#game_series .content a{float:left;position:relative;z-index:0;width:353px;height:89px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;text-decoration:none;cursor:pointer;}
+#game_series .content a:hover{background:#EEF3F3;color:#F60;}
+#game_series .content a img{position:absolute;z-index:1;top:14px;left:14px;width:60px;height:60px;}
+#game_series .content a .n{position:absolute;z-index:1;top:20px;left:90px;font:14px/1.5 "Microsoft YaHei";color:#555;}
+#game_series .content a .t{position:absolute;z-index:1;top:48px;left:90px;font:12px/1.5 "Microsoft YaHei";color:#999;}
+#game_series .content a .v{position:absolute;z-index:1;top:22px;left:270px;font:12px/1.5 "Microsoft YaHei";color:#F60;}
+#game_series .content a .v .star{width:50px;height:18px;background:url(../images/game_bg.png) -100px -296px no-repeat;}
+#game_series .content a .v .star em{display:block;height:18px;background:url(../images/game_bg.png) -100px -346px no-repeat;}
+#game_series .content a .s{position:absolute;z-index:1;top:48px;left:270px;font:12px/1.5 "Microsoft YaHei";color:#999;}
+#game_series .content a:hover .n{color:#F60;}
+
+#game_strategy{position:relative;z-index:0;width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_strategy .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_strategy .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -100px -500px no-repeat;vertical-align:middle;}
+#game_strategy a.more{position:absolute;z-index:1;top:14px;right:14px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_strategy a.more:hover{color:#F60;}
+#game_strategy a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_strategy .content{width:800px;height:auto;border-left:1px solid #EEE;overflow:hidden;}
+#game_strategy .content a{float:left;display:block;position:relative;z-index:0;width:154px;height:154px;padding:13px 10px 0 13px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;font:12px/1.7 "Microsoft YaHei";color:#888;text-decoration:none;cursor:pointer;}
+#game_strategy .content a:hover{background:#EEF3F3;color:#F60;}
+#game_strategy .content a img{display:block;width:150px;height:100px;margin:0 0 3px 0;}
+#game_strategy .content a em{position:absolute;z-index:1;top:41px;left:66px;width:43px;height:43px;background:url(../images/video_cover.png) 0 0 no-repeat;_background:url(../images/video_cover_8.png) 0 0 no-repeat;}
+#game_strategy .content a:hover em{background:url(../images/video_cover_hover.png) 0 0 no-repeat;_background:url(../images/video_cover_hover_8.png) 0 0 no-repeat;}
+
+#game_strategy_all{position:relative;z-index:0;width:708px;height:auto;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_strategy_all .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_strategy_all .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -100px -500px no-repeat;vertical-align:middle;}
+#game_strategy_all .sort{position:absolute;z-index:1;top:6px;right:6px;height:24px;padding:5px 22px 5px 8px;border:1px solid #FFF;background:#FFF;font:12px/2 "Microsoft YaHei";overflow:hidden;}
+#game_strategy_all .sort em{position:absolute;z-index:1;top:15px;right:6px;width:11px;height:6px;background:url(../images/game_bg.png) -50px -750px no-repeat;}
+#game_strategy_all .sort a{display:block;color:#666;}
+#game_strategy_all .sort a:hover{color:#F60;}
+#game_strategy_all .sort_hover{height:auto;border:1px solid #DDD;background:#F9F9F9;}
+#game_strategy_all .content{width:auto;height:auto;margin:0 19px;overflow:hidden;}
+#game_strategy_all .content .item{position:relative;z-index:0;float:left;width:670px;height:auto;padding:16px 0;border-bottom:1px solid #EEE;font:12px/2 "Microsoft YaHei";color:#999;}
+#game_strategy_all .content .item a.n{display:inline-block;margin:0 0 8px 0;font-size:16px;font-weight:bold;color:#666;}
+#game_strategy_all .content .item a:hover{color:#F60;}
+#game_strategy_all .content .item a img{display:block;float:left;width:174px;height:116px;margin:0 16px 0 0;}
+#game_strategy_all .content .item a em{position:absolute;z-index:1;top:52px;left:65px;width:43px;height:43px;background:url(../images/video_cover.png) 0 0 no-repeat;_background:url(../images/video_cover_8.png) 0 0 no-repeat;}
+#game_strategy_all .content .item a:hover em{background:url(../images/video_cover_hover.png) 0 0 no-repeat;_background:url(../images/video_cover_hover_8.png) 0 0 no-repeat;}
+#game_strategy_all .content .item .t{position:absolute;z-index:1;bottom:10px;left:190px;color:#AAA;}
+#game_strategy_all .content .item .s{position:absolute;z-index:1;bottom:8px;right:70px;color:#CCC;}
+#game_strategy_all .content .item .s em{display:inline-block;width:27px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_strategy_all .content .item .g{position:absolute;z-index:1;bottom:8px;right:0;color:#CCC;}
+#game_strategy_all .content .item .g em{display:inline-block;width:18px;height:24px;background:url(../images/game_bg.png) -100px -795px no-repeat;vertical-align:middle;}
+#game_strategy_all .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_tutorial{position:relative;z-index:0;width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_tutorial .content{padding:8px 8px 8px 20px;border:1px solid #EEE;background:#FFF;font:12px/2 "Microsoft YaHei";}
+#game_tutorial .content div{padding:4px 0;}
+#game_tutorial .content span{float:left;display:block;height:14px;margin:5px 14px 5px 0;padding:0 6px 0 0;line-height:1.2;color:#888;overflow:hidden;}
+#game_tutorial .content span.f0{border-right:3px solid #FA7519;}
+#game_tutorial .content span.f1{border-right:3px solid #4896FF;}
+#game_tutorial .content span.f2{border-right:3px solid #F9557F;}
+#game_tutorial .content span.f3{border-right:3px solid #FACD19;}
+#game_tutorial .content span.f4{border-right:3px solid #72BD54;}
+#game_tutorial .content a{display:inline-block;margin:0 14px 0 0;color:#555;}
+#game_tutorial .content a:hover{color:#F60;}
+
+#game_video{position:relative;z-index:0;width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_video .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_video .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) 0 -550px no-repeat;vertical-align:middle;}
+#game_video a.more{position:absolute;z-index:1;top:14px;right:13px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_video a.more:hover{color:#F60;}
+#game_video a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_video .content{width:800px;height:auto;border-left:1px solid #EEE;overflow:hidden;}
+#game_video .content a{float:left;position:relative;z-index:0;width:174px;height:190px;padding:20px 31px 0 30px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;font:12px/1.7 "Microsoft YaHei";color:#888;text-decoration:none;cursor:pointer;}
+#game_video .content a:hover{background:#EEF3F3;color:#F60;}
+#game_video .content a img{display:block;width:174px;height:116px;margin:0 0 5px 0;}
+#game_video .content a em{position:absolute;z-index:1;top:56px;left:95px;width:43px;height:43px;background:url(../images/video_cover.png) 0 0 no-repeat;_background:url(../images/video_cover_8.png) 0 0 no-repeat;}
+#game_video .content a:hover em{background:url(../images/video_cover_hover.png) 0 0 no-repeat;_background:url(../images/video_cover_hover_8.png) 0 0 no-repeat;}
+#game_video .content a .s{position:absolute;z-index:1;bottom:3px;right:93px;color:#CCC;}
+#game_video .content a .s i{position:static;display:inline-block;width:12px;height:24px;background:url(../images/game_bg.png) 0 -846px no-repeat;vertical-align:middle;}
+#game_video .content a .g{position:absolute;z-index:1;bottom:3px;right:31px;color:#CCC;}
+#game_video .content a .g i{position:static;display:inline-block;width:15px;height:24px;background:url(../images/game_bg.png) -100px -795px no-repeat;vertical-align:middle;}
+
+#game_video_all{position:relative;z-index:0;width:710px;height:auto;overflow:hidden;}
+#game_video_all .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_video_all .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) 0 -550px no-repeat;vertical-align:middle;}
+#game_video_all .sort{position:absolute;z-index:1;top:6px;right:6px;height:24px;padding:5px 22px 5px 8px;border:1px solid #FFF;background:#FFF;font:12px/2 "Microsoft YaHei";overflow:hidden;}
+#game_video_all .sort em{position:absolute;z-index:1;top:15px;right:6px;width:11px;height:6px;background:url(../images/game_bg.png) -50px -750px no-repeat;}
+#game_video_all .sort a{display:block;color:#666;}
+#game_video_all .sort a:hover{color:#F60;}
+#game_video_all .sort_hover{height:auto;border:1px solid #DDD;background:#F9F9F9;}
+#game_video_all .content{width:800px;height:auto;border-left:1px solid #EEE;overflow:hidden;}
+#game_video_all .content a{float:left;position:relative;z-index:0;width:174px;height:190px;padding:20px 31px 0 30px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;font:12px/1.7 "Microsoft YaHei";color:#888;text-decoration:none;cursor:pointer;}
+#game_video_all .content a:hover{background:#EEF3F3;color:#F60;}
+#game_video_all .content a img{display:block;width:174px;height:116px;margin:0 0 5px 0;}
+#game_video_all .content a em{position:absolute;z-index:1;top:56px;left:95px;width:43px;height:43px;background:url(../images/video_cover.png) 0 0 no-repeat;_background:url(../images/video_cover_8.png) 0 0 no-repeat;}
+#game_video_all .content a:hover em{background:url(../images/video_cover_hover.png) 0 0 no-repeat;_background:url(../images/video_cover_hover_8.png) 0 0 no-repeat;}
+#game_video_all .content a .s{position:absolute;z-index:1;bottom:3px;right:93px;color:#CCC;}
+#game_video_all .content a .s i{position:static;display:inline-block;width:12px;height:24px;background:url(../images/game_bg.png) 0 -846px no-repeat;vertical-align:middle;}
+#game_video_all .content a .g{position:absolute;z-index:1;bottom:3px;right:31px;color:#CCC;}
+#game_video_all .content a .g i{position:static;display:inline-block;width:15px;height:24px;background:url(../images/game_bg.png) -100px -795px no-repeat;vertical-align:middle;}
+
+#game_news{position:relative;z-index:0;width:708px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_news .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_news .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -550px no-repeat;vertical-align:middle;}
+#game_news a.more{position:absolute;z-index:1;top:14px;right:13px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_news a.more:hover{color:#F60;}
+#game_news a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_news .content{height:auto;padding:3px 18px;font:12px/2 "Microsoft YaHei";color:#888;}
+#game_news .content .item{height:24px;padding:7px 3px;border-bottom:1px solid #EEE;}
+#game_news .content .item span{float:right;color:#AAA;}
+#game_news .content .item a{color:#555;text-decoration:none;cursor:pointer;}
+#game_news .content .item a:hover{color:#F60;}
+#game_news .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_news_all{position:relative;z-index:0;width:708px;height:auto;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_news_all .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_news_all .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -550px no-repeat;vertical-align:middle;}
+#game_news_all .sort{position:absolute;z-index:1;top:6px;right:6px;height:24px;padding:5px 22px 5px 8px;border:1px solid #FFF;background:#FFF;font:12px/2 "Microsoft YaHei";overflow:hidden;}
+#game_news_all .sort em{position:absolute;z-index:1;top:15px;right:6px;width:11px;height:6px;background:url(../images/game_bg.png) -50px -750px no-repeat;}
+#game_news_all .sort a{display:block;color:#666;}
+#game_news_all .sort a:hover{color:#F60;}
+#game_news_all .sort_hover{height:auto;border:1px solid #DDD;background:#F9F9F9;}
+#game_news_all .content{width:auto;height:auto;margin:0 19px;overflow:hidden;}
+#game_news_all .content .item{position:relative;z-index:0;float:left;width:670px;height:auto;padding:16px 0;border-bottom:1px solid #EEE;font:12px/2 "Microsoft YaHei";color:#999;}
+#game_news_all .content .item a.n{display:inline-block;margin:0 0 8px 0;font-size:16px;font-weight:bold;color:#666;}
+#game_news_all .content .item a:hover{color:#F60;}
+#game_news_all .content .item a img{display:block;float:left;width:174px;height:116px;margin:0 16px 0 0;}
+#game_news_all .content .item a em{position:absolute;z-index:1;top:52px;left:65px;width:43px;height:43px;background:url(../images/video_cover.png) 0 0 no-repeat;_background:url(../images/video_cover_8.png) 0 0 no-repeat;}
+#game_news_all .content .item a:hover em{background:url(../images/video_cover_hover.png) 0 0 no-repeat;_background:url(../images/video_cover_hover_8.png) 0 0 no-repeat;}
+#game_news_all .content .item .t{position:absolute;z-index:1;bottom:10px;left:190px;color:#AAA;}
+#game_news_all .content .item .s{position:absolute;z-index:1;bottom:8px;right:70px;color:#CCC;}
+#game_news_all .content .item .s em{display:inline-block;width:27px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_news_all .content .item .g{position:absolute;z-index:1;bottom:8px;right:0;color:#CCC;}
+#game_news_all .content .item .g em{display:inline-block;width:18px;height:24px;background:url(../images/game_bg.png) -100px -795px no-repeat;vertical-align:middle;}
+#game_news_all .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_wallpaper{position:relative;z-index:0;width:710px;height:auto;margin:0 0 12px 0;overflow:hidden;}
+#game_wallpaper .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_wallpaper .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) 0 -600px no-repeat;vertical-align:middle;}
+#game_wallpaper a.more{position:absolute;z-index:1;top:14px;right:13px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_wallpaper a.more:hover{color:#F60;}
+#game_wallpaper a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_wallpaper .content{float:left;width:800px;height:auto;border-left:1px solid #EEE;}
+#game_wallpaper .content a{float:left;display:block;width:150px;height:auto;padding:13px;border:solid #EEE;border-width:0 1px 1px 0;background:#FFF;text-decoration:none;cursor:pointer;}
+#game_wallpaper .content a:hover{background:#EEF3F3;color:#F60;}
+#game_wallpaper .content a img{display:block;width:150px;height:auto;}
+
+#game_resource{width:710px;height:auto;margin:0 0 12px 0;}
+#game_resource .title{height:32px;padding:6px 6px 6px 16px;border:1px solid #EEE;background:#FFF;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_resource .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -600px no-repeat;vertical-align:middle;}
+#game_resource .item{position:relative;z-index:0;border:1px solid #EEE;background:#FFF;border-top:0;}
+#game_resource .item .res{height:50px;font:12px/3 "Microsoft YaHei";color:#888;}
+#game_resource .item .res .n{position:absolute;z-index:1;top:7px;left:20px;color:#555;white-space:nowrap;cursor:default;}
+#game_resource .item .res .n_ellipsis{width:250px;text-overflow:ellipsis;background:#FFF;overflow:hidden;}
+#game_resource .item .res .t{position:absolute;z-index:1;top:7px;left:310px;background:#FFF;}
+#game_resource .item .res .s{position:absolute;z-index:1;top:7px;left:430px;background:#FFF;}
+#game_resource .item .res .h{display:none;position:absolute;z-index:1;top:7px;left:490px;background:#FFF;}
+#game_resource .item .res .u{position:absolute;z-index:1;top:7px;left:530px;background:#FFF;}
+#game_resource .item .res a.d{position:absolute;z-index:1;top:10px;right:10px;width:90px;height:30px;border-radius:3px;background:#FF8726;font:16px/1.9 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#game_resource .item .res a.d:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_resource .item .res a.d em{position:absolute;z-index:1;top:-13px;right:-4px;width:33px;height:22px;background:url(../images/game_bg.png) -100px -750px no-repeat;}
+#game_resource .item .res a.d:hover em{filter:alpha(opacity=80);opacity:0.8;}
+#game_resource .item .res a.m{display:none;position:absolute;z-index:0;top:39px;right:10px;width:88px;height:30px;border:1px solid #AAA;background:#FFF;border-radius:0 0 6px 6px;font:12px/2.5 "Microsoft YaHei";color:#333;text-align:center;}
+#game_resource .item .res a.m:hover{color:#F60;}
+#game_resource .item .res a.nd{position:absolute;z-index:1;top:10px;right:10px;width:90px;height:30px;border-radius:3px;background:#03C67E;font:16px/1.9 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#game_resource .item .res a.nd:hover{filter:alpha(opacity=80);opacity:0.8;}
+#game_resource .item .notice{height:auto;margin:0 10px 10px 10px;padding:6px 20px;background:#FEF7E0;font:12px/2 "Microsoft YaHei";color:#888;}
+#game_resource .item .notice .name{margin:0 0 3px 0;color:#F00;}
+#game_resource .item .notice a{color:#18D;}
+#game_resource .item .notice a:hover{color:#F60;}
+#game_resource .item_hover{z-index:3;}
+#game_resource .show_all em{background-color:#FEF7E0;}
+
+.game_parabola_pic{position:absolute;z-index:10;width:48px;height:48px;border-radius:20%;}
+
+#game_tools_all{position:relative;z-index:0;width:708px;height:auto;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_tools_all .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_tools_all .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -50px -700px no-repeat;vertical-align:middle;}
+#game_tools_all .content{width:auto;height:auto;margin:0 19px;overflow:hidden;}
+#game_tools_all .content .item{position:relative;z-index:0;float:left;width:670px;height:auto;padding:16px 0;border-bottom:1px solid #EEE;font:12px/2 "Microsoft YaHei";color:#888;}
+#game_tools_all .content .item a.n{display:inline-block;font-size:14px;line-height:24px;color:#555;}
+#game_tools_all .content .item a.n:hover{color:#F60;}
+#game_tools_all .content .item a img{display:block;float:left;width:48px;height:48px;margin:0 16px 0 0;}
+#game_tools_all .content .item .star{position:absolute;z-index:1;top:31px;right:170px;width:50px;height:18px;background:url(../images/game_bg.png) -100px -296px no-repeat;}
+#game_tools_all .content .item .star em{display:block;height:18px;background:url(../images/game_bg.png) -100px -346px no-repeat;}
+#game_tools_all .content .item a.v{position:absolute;z-index:1;top:25px;right:0;width:90px;height:24px;padding:2px 0;border:1px solid #FF8726;border-radius:3px;text-align:center;color:#FF8726;text-decoration:none;}
+#game_tools_all .content .item a.v:hover{background:#FF8726;font-weight:bold;color:#FFF;}
+#game_tools_all .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_bbs{position:relative;z-index:0;width:708px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_bbs .title{height:32px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_bbs .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 0;background:url(../images/game_bg.png) -100px -598px no-repeat;vertical-align:middle;}
+#game_bbs a.more{position:absolute;z-index:1;top:14px;right:13px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_bbs a.more:hover{color:#F60;}
+#game_bbs a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_bbs .content{height:auto;padding:3px 19px 0 19px;font:12px/2 "Microsoft YaHei";color:#AAA;}
+#game_bbs .content .top{position:relative;z-index:0;height:50px;border-bottom:1px solid #EEE;}
+#game_bbs .content .top .i{position:absolute;z-index:1;top:17px;left:10px;width:20px;height:17px;background:url(../images/bbs_bg.png) 0 0 no-repeat;}
+#game_bbs .content .top .v{position:absolute;z-index:1;top:17px;left:580px;white-space:nowrap;}
+#game_bbs .content .top .v em{display:inline-block;width:28px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_bbs .content .top a{position:absolute;z-index:1;top:12px;left:42px;font:13px/2 "Microsoft YaHei";}
+#game_bbs .content .top a:hover{color:#F60;}
+#game_bbs .content .item{position:relative;z-index:0;height:75px;border-bottom:1px solid #EEE;}
+#game_bbs .content .item a.f{position:absolute;z-index:1;top:14px;left:3px;width:48px;height:48px;border-radius:50%;overflow:hidden;}
+#game_bbs .content .item a.f img{display:block;width:48px;height:48px;}
+#game_bbs .content .item .t{position:absolute;z-index:1;top:14px;left:66px;height:24px;overflow:hidden;}
+#game_bbs .content .item .t a{font-size:16px;line-height:1.2;color:#555;}
+#game_bbs .content .item .t a:hover{color:#F60;}
+#game_bbs .content .item .t a.c{color:#999;}
+#game_bbs .content .item .t a.c:hover{color:#F60;}
+#game_bbs .content .item a.u{position:absolute;z-index:1;top:40px;left:66px;color:#AAA;}
+#game_bbs .content .item a.u:hover{color:#F60;}
+#game_bbs .content .item a.u em{margin:5px 0 7px 6px;vertical-align:middle;}
+#game_bbs .content .item .p{position:absolute;z-index:1;top:40px;left:210px;}
+#game_bbs .content .item .l{position:absolute;z-index:1;top:40px;left:350px;}
+#game_bbs .content .item .v{position:absolute;z-index:1;top:40px;left:522px;}
+#game_bbs .content .item .v em{display:inline-block;width:28px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_bbs .content .item .r{position:absolute;z-index:1;top:40px;left:612px;}
+#game_bbs .content .item .r em{display:inline-block;width:20px;height:24px;background:url(../images/game_bg.png) -50px -795px no-repeat;vertical-align:middle;}
+#game_bbs a.bbs_view_all{display:block;position:relative;z-index:0;top:-1px;width:auto;height:auto;margin:0 19px 11px 19px;padding:6px 0;background:#F5F5F5;font:12px/2 "Microsoft YaHei";color:#18D;text-align:center;}
+#game_bbs a.bbs_view_all:hover{color:#F60;}
+#game_bbs a.bbs_view_all span{font-family:Verdana;color:#F60;}
+#game_bbs .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_bbs_info{position:relative;z-index:0;width:958px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_bbs_info .title{height:32px;padding:6px 6px 0 6px;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_bbs_info .title em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 8px;background:url(../images/game_bg.png) -100px -598px no-repeat;vertical-align:middle;}
+#game_bbs_info .info{width:770px;height:auto;padding:3px 0 10px 14px;font:12px/2 "Microsoft YaHei";color:#777;}
+#game_bbs_info .info a{display:inline-block;margin:0 12px 0 0;color:#777;}
+#game_bbs_info .info a:hover{color:#F60;}
+#game_bbs_info a.post_new{position:absolute;z-index:1;top:20px;right:20px;width:92px;height:28px;margin:0;border-radius:3px;background:#3EBD92;font:14px/2 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#game_bbs_info a.post_new:hover{filter:alpha(opacity=80);opacity:0.8;color:#FFF;}
+
+#game_bbs_all{position:relative;z-index:0;width:958px;height:auto;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_bbs_all .label{height:43px;border-bottom:1px solid #EEE;}
+#game_bbs_all .label a{display:inline-block;width:auto;height:28px;padding:8px 24px 6px 24px;border-bottom:1px solid #FFF;font:14px/2 "Microsoft YaHei";color:#666;}
+#game_bbs_all .label a:hover{color:#F60;}
+#game_bbs_all .label a.active{border-bottom:1px solid #3EBD92;color:#3EBD92;text-decoration:none;}
+#game_bbs_all .label a.active:hover{border-bottom:1px solid #F60;color:#F60;}
+#game_bbs_all .content{height:auto;padding:3px 19px 0 19px;font:12px/2 "Microsoft YaHei";color:#AAA;}
+#game_bbs_all .content .top{position:relative;z-index:0;height:50px;border-bottom:1px solid #EEE;}
+#game_bbs_all .content .top .i{position:absolute;z-index:1;top:17px;left:10px;width:20px;height:17px;background:url(../images/bbs_bg.png) 0 0 no-repeat;}
+#game_bbs_all .content .top .v{position:absolute;z-index:1;top:17px;left:830px;white-space:nowrap;}
+#game_bbs_all .content .top .v em{display:inline-block;width:28px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_bbs_all .content .top a{position:absolute;z-index:1;top:12px;left:42px;font:13px/2 "Microsoft YaHei";}
+#game_bbs_all .content .top a:hover{color:#F60;}
+#game_bbs_all .content .item{position:relative;z-index:0;height:75px;border-bottom:1px solid #EEE;}
+#game_bbs_all .content .item a.f{position:absolute;z-index:1;top:14px;left:3px;width:48px;height:48px;border-radius:50%;overflow:hidden;}
+#game_bbs_all .content .item a.f img{display:block;width:48px;height:48px;}
+#game_bbs_all .content .item .t{position:absolute;z-index:1;top:14px;left:66px;}
+#game_bbs_all .content .item .t a{font-size:16px;line-height:1.2;color:#555;}
+#game_bbs_all .content .item .t a:hover{color:#F60;}
+#game_bbs_all .content .item .t a.c{color:#AAA;}
+#game_bbs_all .content .item .t a.c:hover{color:#F60;}
+#game_bbs_all .content .item a.u{position:absolute;z-index:1;top:40px;left:66px;color:#AAA;}
+#game_bbs_all .content .item a.u:hover{color:#F60;}
+#game_bbs_all .content .item a em{margin:5px 0 7px 6px;vertical-align:middle;}
+#game_bbs_all .content .item .p{position:absolute;z-index:1;top:40px;left:310px;}
+#game_bbs_all .content .item .l{position:absolute;z-index:1;top:40px;left:530px;}
+#game_bbs_all .content .item .v{position:absolute;z-index:1;top:14px;left:830px;}
+#game_bbs_all .content .item .v em{display:inline-block;width:28px;height:24px;background:url(../images/game_bg.png) 0 -795px no-repeat;vertical-align:middle;}
+#game_bbs_all .content .item .r{position:absolute;z-index:1;top:40px;left:830px;}
+#game_bbs_all .content .item .r em{display:inline-block;width:28px;height:24px;background:url(../images/game_bg.png) -46px -795px no-repeat;vertical-align:middle;}
+#game_bbs_all a.post_new{position:absolute;z-index:1;bottom:12px;right:20px;width:92px;height:28px;margin:0;border-radius:3px;background:#3EBD92;font:14px/2 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#game_bbs_all a.post_new:hover{filter:alpha(opacity=80);opacity:0.8;color:#FFF;}
+
+#game_comment{position:relative;z-index:0;width:708px;height:auto;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_comment .title_t{height:32px;padding:6px;border-bottom:1px solid #EEE;font:16px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_comment .title_t em{display:inline-block;width:16px;height:18px;margin:6px 8px 8px 8px;background:url(../images/game_bg.png) 0 -650px no-repeat;vertical-align:middle;}
+#game_comment a.more{position:absolute;z-index:1;top:14px;right:13px;font:12px/1.5 "Microsoft YaHei";color:#888;}
+#game_comment a.more:hover{color:#F60;}
+#game_comment a.more span{margin:0 0 0 1px;font-family:SimSun;}
+#game_comment #doyo_comment .send{border-top:0;}
+#game_comment #doyo_comment .hot,#game_comment #doyo_comment .list,#game_comment #doyo_comment .item .l,#game_comment #doyo_comment .item .r .c,#game_comment #doyo_comment a.comment_view_all,#game_comment #doyo_comment .comment_change_page,#game_comment #doyo_comment .send,#game_comment #doyo_comment .send .r .comment_content,#game_comment #doyo_comment .send .r .disable{font-family:"Microsoft YaHei";}
+#game_comment #doyo_comment .item .l,#game_comment #doyo_comment .item .r .i,#game_comment #doyo_comment .item .r .o a{color:#AAA;}
+#game_comment #doyo_comment .item .r .c{color:#555;}
+
+#game_hardware_all{width:960px;height:auto;margin:0 auto;}
+#game_hardware_all .show_bar{display:none;position:relative;z-index:0;width:auto;height:165px;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;}
+#game_hardware_all .show_bar .title{width:auto;height:auto;padding:15px 0 0 0;font:bold 18px/2 "Microsoft YaHei";color:#666;text-align:center;}
+#game_hardware_all .show_bar .indicator{position:absolute;z-index:1;top:63px;left:10px;width:69px;height:31px;background:url(../images/hardware_bg.png) 0 0 no-repeat;}
+#game_hardware_all .show_bar .bar{position:absolute;z-index:1;top:96px;left:34px;width:890px;height:20px;background:url(../images/hardware_bar_bg.png) 0 0 no-repeat;}
+#game_hardware_all .show_bar .arrow_1{position:absolute;z-index:1;top:120px;left:329px;width:10px;height:9px;background:url(../images/hardware_bg.png) -100px 0 no-repeat;}
+#game_hardware_all .show_bar .arrow_2{position:absolute;z-index:1;top:120px;left:619px;width:10px;height:9px;background:url(../images/hardware_bg.png) -100px 0 no-repeat;}
+#game_hardware_all .show_bar .word_1{position:absolute;z-index:1;top:122px;left:44px;width:290px;height:24px;font:12px/2 "Microsoft YaHei";color:#FF0B0A;text-align:center;}
+#game_hardware_all .show_bar .word_2{position:absolute;z-index:1;top:122px;left:334px;width:290px;height:24px;font:12px/2 "Microsoft YaHei";color:#22AC38;text-align:center;}
+#game_hardware_all .show_bar .word_3{position:absolute;z-index:1;top:122px;left:624px;width:290px;height:24px;font:12px/2 "Microsoft YaHei";color:#3889EF;text-align:center;}
+#game_hardware_all .item{height:auto;margin:0 0 10px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_hardware_all .item .n{float:left;width:80px;height:30px;padding:68px 20px 0 20px;font:12px/2 "Microsoft YaHei";color:#999;text-align:center;}
+#game_hardware_all .os .n{background:url(../images/hardware_bg.png) 32px -80px no-repeat;}
+#game_hardware_all .re .n{background:url(../images/hardware_bg.png) -64px -78px no-repeat;}
+#game_hardware_all .cpu .n{background:url(../images/hardware_bg.png) -164px -80px no-repeat;}
+#game_hardware_all .memory .n{background:url(../images/hardware_bg.png) 36px -180px no-repeat;}
+#game_hardware_all .gpu .n{background:url(../images/hardware_bg.png) -72px -177px no-repeat;}
+#game_hardware_all .disk .n{background:url(../images/hardware_bg.png) -168px -175px no-repeat;}
+#game_hardware_all .item .c{float:left;width:600px;height:auto;padding:20px 0;font:12px/2 "Microsoft YaHei";color:#999;}
+#game_hardware_all .item .c a{display:inline-block;margin:0 24px 0 0;color:#999;}
+#game_hardware_all .item .c a:hover{color:#F60;}
+#game_hardware_all .item .c a.red{color:#F00;}
+#game_hardware_all .item .c span.b{display:inline-block;width:550px;vertical-align:top;}
+#game_hardware_all .item .c span.my{color:#333;}
+#game_hardware_all .item .r{float:left;width:30px;height:98px;margin:0 50px 0 0;}
+#game_hardware_all .item .rr{background:url(../images/hardware_bg.png) -150px 38px no-repeat;}
+#game_hardware_all .item .rm{background:url(../images/hardware_bg.png) -180px 38px no-repeat;}
+#game_hardware_all .item .rn{background:url(../images/hardware_bg.png) -210px 38px no-repeat;}
+#game_hardware_all .item .ru{background:url(../images/hardware_bg.png) -240px 38px no-repeat;}
+#game_hardware_all .item .i{float:left;width:150px;height:auto;padding:37px 0 0 0;font:12px/2 "Microsoft YaHei";}
+#game_hardware_all .item .ir{color:#3889EF;}
+#game_hardware_all .item .im{color:#22AC38;}
+#game_hardware_all .item .in{color:#FF0B0A;}
+#game_hardware_all .item .iu{color:#999;}
+#game_hardware_all .item .onekey_install{width:auto;height:auto;padding:0 18px;border:0;border-radius:3px;background:#3EBD92;font:12px/2 "Microsoft YaHei";color:#FFF;cursor:pointer;}
+
+#shouji_game_qrcode{position:relative;z-index:0;width:200px;height:auto;margin:0 0 12px 0;padding:19px 19px 10px 19px;border:1px solid #EEE;background:#FFF;text-align:center;overflow:hidden;}
+#shouji_game_qrcode .qrcode{display:block;width:200px;height:200px;}
+#shouji_game_qrcode .logo{position:absolute;z-index:1;top:97px;left:97px;display:block;width:32px;height:32px;border:6px solid #FFF;border-radius:6px;}
+#shouji_game_qrcode .qrword{margin:6px 0 0 0;font:bold 12px/1.5 "Microsoft YaHei";color:#666;}
+
+#game_cate_hot{width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_cate_hot .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_cate_hot .content{}
+#game_cate_hot .content a{display:block;_width:300px;height:24px;padding:9px 0 9px 16px;font:12px/2 "Microsoft YaHei";color:#666;text-decoration:none;}
+#game_cate_hot .content a:hover{background:#EEF3F3;color:#F60;}
+#game_cate_hot .content a em.r{float:left;display:block;width:24px;height:18px;margin:3px 16px 3px 0;font-style:normal;line-height:1.4;color:#999;text-align:center;}
+#game_cate_hot .content a em.t_0{background:#FF6464;color:#FFF;}
+#game_cate_hot .content a em.t_1{background:#FF9A63;color:#FFF;}
+#game_cate_hot .content a em.t_2{background:#FAD669;color:#FFF;}
+#game_cate_hot .content a img{float:left;display:block;width:24px;height:24px;margin:0 16px 0 0;border-radius:20%;}
+#game_cate_hot .content a div{display:none;}
+#game_cate_hot .content a.active{height:48px;padding:12px 0 12px 16px;font-size:14px;}
+#game_cate_hot .content a.active em.r{display:none;}
+#game_cate_hot .content a.active img{width:48px;height:48px;margin:0 12px 0 0;}
+#game_cate_hot .content a.active div{display:block;margin:0 0 0 60px;font:12px/1.7 "Microsoft YaHei";color:#999;}
+#game_cate_hot .content a.active div span.star{display:inline-block;width:50px;height:18px;margin:0 3px 2px 0;background:url(../images/game_bg.png) -100px -296px no-repeat;vertical-align:middle;}
+#game_cate_hot .content a.active div span.star em{position:inherit;display:block;height:18px;background:url(../images/game_bg.png) -100px -346px no-repeat;}
+
+#shouji_game_rank{width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#shouji_game_rank .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#shouji_game_rank .content{}
+#shouji_game_rank .content a{display:block;height:28px;padding:6px 0 6px 16px;font:14px/2 "Microsoft YaHei";color:#666;text-decoration:none;}
+#shouji_game_rank .content a:hover{background:#EEF3F3;color:#F60;}
+#shouji_game_rank .content a em.r{float:left;display:block;width:24px;height:18px;margin:3px 16px 3px 0;font-style:normal;line-height:1.4;color:#999;text-align:center;}
+#shouji_game_rank .content a em.t_0{background:#FF6464;color:#FFF;}
+#shouji_game_rank .content a em.t_1{background:#FF9A63;color:#FFF;}
+#shouji_game_rank .content a em.t_2{background:#FAD669;color:#FFF;}
+#shouji_game_rank .content a img{float:left;width:24px;height:24px;margin:2px 12px 0 0;border-radius:20%;}
+
+#game_who_play{position:relative;z-index:0;width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_who_play .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_who_play .label{position:absolute;z-index:1;top:0;right:0;font:12px/3 "Microsoft YaHei";color:#888;}
+#game_who_play .label span{display:inline-block;height:36px;width:32px;margin:3px 6px 0 6px;border-bottom:1px solid #FFF;text-align:center;color:#999;cursor:default;}
+#game_who_play .label span.active{border-bottom:1px solid #3EBD92;color:#3EBD92;}
+#game_who_play .content{}
+#game_who_play .content .box{padding:6px 0 0 16px;}
+#game_who_play .content .box .item{width:auto;width:182px;height:48px;padding:12px;border-bottom:1px solid #EEE;font:12px/2 "Microsoft YaHei";color:#999;}
+#game_who_play .content .box .item img{display:block;float:left;width:48px;height:48px;margin:0 16px 0 0;border-radius:50%;}
+#game_who_play .content .box .item a{color:#555;}
+#game_who_play .content .box .item a:hover{color:#F60;}
+#game_who_play .cover{position:absolute;z-index:1;bottom:0;left:0;width:100%;height:6px;background:#FFF;}
+
+#game_cate_new{width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_cate_new .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_cate_new .content{}
+#game_cate_new .content a{display:block;_width:300px;height:24px;padding:9px 0 9px 16px;font:12px/2 "Microsoft YaHei";color:#666;text-decoration:none;}
+#game_cate_new .content a:hover{background:#EEF3F3;color:#F60;}
+#game_cate_new .content a em.r{float:left;display:block;width:24px;height:18px;margin:3px 16px 3px 0;font-style:normal;line-height:1.4;color:#999;text-align:center;}
+#game_cate_new .content a em.t_0{background:#FF6464;color:#FFF;}
+#game_cate_new .content a em.t_1{background:#FF9A63;color:#FFF;}
+#game_cate_new .content a em.t_2{background:#FAD669;color:#FFF;}
+#game_cate_new .content a img{float:left;display:block;width:24px;height:24px;margin:0 16px 0 0;border-radius:20%;}
+#game_cate_new .content a div{display:none;}
+#game_cate_new .content a.active{height:48px;padding:12px 0 12px 16px;font-size:14px;}
+#game_cate_new .content a.active em.r{display:none;}
+#game_cate_new .content a.active img{width:48px;height:48px;margin:0 12px 0 0;}
+#game_cate_new .content a.active div{display:block;margin:0 0 0 60px;font:12px/1.7 "Microsoft YaHei";color:#999;}
+#game_cate_new .content a.active div span.star{display:inline-block;width:50px;height:18px;margin:0 3px 2px 0;background:url(../images/game_bg.png) -100px -296px no-repeat;vertical-align:middle;}
+#game_cate_new .content a.active div span.star em{position:inherit;display:block;height:18px;background:url(../images/game_bg.png) -100px -346px no-repeat;}
+
+#game_cate_fahao{width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+#game_cate_fahao .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+#game_cate_fahao .content{height:auto;padding:12px 16px 6px 16px;font:12px/2 "Microsoft YaHei";color:#AAA;}
+#game_cate_fahao .content .item{height:28px;margin:0 0 6px 0;font:14px/2 "Microsoft YaHei";color:#999;}
+#game_cate_fahao .content .item .g{float:left;width:100px;height:28px;overflow:hidden;}
+#game_cate_fahao .content .item .g a{color:#999;}
+#game_cate_fahao .content .item .g a:hover{color:#F60;}
+#game_cate_fahao .content .item .f{float:right;width:100px;height:28px;text-align:right;overflow:hidden;}
+#game_cate_fahao .content .item .f a{color:#FF8726;}
+#game_cate_fahao .content .item .f a:hover{color:#F00;}
+
+.article_hot_rank{width:238px;height:auto;margin:0 0 12px 0;border:1px solid #EEE;background:#FFF;overflow:hidden;}
+.article_hot_rank .title{height:28px;padding:6px 6px 6px 16px;border-bottom:1px solid #EEE;font:14px/2 "Microsoft YaHei";color:#555;overflow:hidden;}
+.article_hot_rank .content a{display:block;height:24px;padding:6px 6px 6px 16px;font:12px/2 "Microsoft YaHei";color:#666;text-decoration:none;overflow:hidden;}
+.article_hot_rank .content a:hover{background:#EEF3F3;color:#F60;}
+.article_hot_rank .content a em.r{float:left;display:block;width:24px;height:18px;margin:3px 16px 4px 0;font-style:normal;line-height:1.4;color:#999;text-align:center;}
+.article_hot_rank .content a em.t_0{background:#FF6464;color:#FFF;}
+.article_hot_rank .content a em.t_1{background:#FF9A63;color:#FFF;}
+.article_hot_rank .content a em.t_2{background:#FAD669;color:#FFF;}
+
+.show_all{position:relative;z-index:0;top:-13px;width:710px;height:16px;border-top:1px solid #EEE;}
+.show_all em{position:absolute;z-index:1;top:-1px;left:50%;width:50px;height:16px;margin:0 0 0 -25px;border: solid #EEE;border-width:0 1px 1px 1px;background:url(../images/game_bg.png) -84px -396px no-repeat #FFF;cursor:pointer;}
+.show_all_hover{border-color:#3EBD92;}
+.show_all_hover em{border-color:#3EBD92;background:url(../images/game_bg.png) -84px -446px no-repeat #FFF;}
+
+.change_page{clear:both;height:auto;margin:20px 0;font:14px/22px Verdana;text-align:center;}
+.change_page a{display:inline-block;margin:0 3px;padding:0 6px;border-radius:6px;color:#18D;}
+.change_page a:hover{background:#F60;color:#FFF;text-decoration:none;}
+.change_page a.current{background:#F90;font-weight:bold;color:#FFF;}
+.change_page a.current:hover{background:#F60;color:#FFF;}
+
+#bbs_popup_alert{width:430px;height:auto;background:#FFF;}
+#bbs_popup_alert .title{height:32px;padding:2px 12px;background:#3EBD92;font:16px/2 "Microsoft YaHei";color:#FFF;}
+#bbs_popup_alert a.close{position:absolute;z-index:1;top:0;right:0;width:36px;height:36px;font:24px/1.5 Tahoma;color:#FFF;text-align:center;text-decoration:none;}
+#bbs_popup_alert a.close:hover{color:#F60;}
+#bbs_popup_alert .content{padding:20px;font:14px/2.5 "Microsoft YaHei";color:#666;text-align:center;}
+#bbs_popup_alert .button{padding:0 20px 20px 20px;text-align:center;}
+#bbs_popup_alert .button a{display:inline-block;width:auto;height:auto;margin:0 10px;padding:0 32px;font:16px/2 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#bbs_popup_alert .button a:hover{filter:alpha(opacity=80);opacity:0.8;}
+#bbs_popup_alert .button a.ok{background:#3EBD92;}
+
+#bbs_popup_confirm{width:430px;height:auto;background:#FFF;}
+#bbs_popup_confirm .title{height:32px;padding:2px 12px;background:#3EBD92;font:16px/2 "Microsoft YaHei";color:#FFF;}
+#bbs_popup_confirm a.close{position:absolute;z-index:1;top:0;right:0;width:36px;height:36px;font:24px/1.5 Tahoma;color:#FFF;text-align:center;text-decoration:none;}
+#bbs_popup_confirm a.close:hover{color:#F60;}
+#bbs_popup_confirm .content{padding:20px;font:14px/2.5 "Microsoft YaHei";color:#666;text-align:center;}
+#bbs_popup_confirm .content strong{color:#333;}
+#bbs_popup_confirm .content .orange{margin:0 6px;color:#F60;}
+#bbs_popup_confirm .button{padding:0 20px 20px 20px;text-align:center;}
+#bbs_popup_confirm .button a{display:inline-block;width:auto;height:auto;margin:0 10px;padding:0 32px;border-radius:3px;font:16px/2 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#bbs_popup_confirm .button a:hover{filter:alpha(opacity=80);opacity:0.8;}
+#bbs_popup_confirm .button a.ok{background:#3EBD92;}
+#bbs_popup_confirm .button a.cancel{background:#999;}
+
+#genuine_popup_confirm{width:430px;height:auto;background:#FFF;}
+#genuine_popup_confirm .title{height:32px;padding:2px 12px;background:#3EBD92;font:16px/2 "Microsoft YaHei";color:#FFF;}
+#genuine_popup_confirm a.close{position:absolute;z-index:1;top:0;right:0;width:36px;height:36px;font:24px/1.5 Tahoma;color:#FFF;text-align:center;text-decoration:none;}
+#genuine_popup_confirm a.close:hover{color:#F60;}
+#genuine_popup_confirm .content{padding:20px;font:14px/2 "Microsoft YaHei";color:#666;text-align:center;}
+#genuine_popup_confirm .content strong{font-size:28px;color:#CA0026;}
+#genuine_popup_confirm .content a{color:#18D;}
+#genuine_popup_confirm .content a:hover{color:#F60;}
+#genuine_popup_confirm .button{padding:0 20px 20px 20px;text-align:center;}
+#genuine_popup_confirm .button a{display:inline-block;width:auto;height:auto;margin:0 10px;padding:0 32px;border-radius:3px;font:16px/2 "Microsoft YaHei";color:#FFF;text-align:center;text-decoration:none;}
+#genuine_popup_confirm .button a:hover{filter:alpha(opacity=80);opacity:0.8;}
+#genuine_popup_confirm .button a.ok{background:#3EBD92;}
+#genuine_popup_confirm .button a.cancel{background:#999;}
+
+#quick_go_top{display:none;position:fixed;_position:absolute;z-index:0;left:50%;bottom:10px;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-10));width:40px;height:40px;background:url(../images/go_top_bg.png) 0 0 no-repeat;cursor:pointer;}
+#quick_go_top:hover{background-position:0 -50px;}
+
+#debug_panel{position:absolute;z-index:30;top:0;right:0;width:0;max-width:300px;height:0;padding:8px;background:#FFC;font:12px/1.5 SimSun;color:#666;word-wrap:break-word;word-break:break-all;cursor:default;filter:alpha(opacity=0);opacity:0;overflow:hidden;}
+#debug_panel a{color:#18D;}
+#debug_panel a:hover{color:#F60;}
