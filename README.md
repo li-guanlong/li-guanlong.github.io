@@ -6,3 +6,4 @@
 |  ----  |  ----  |  ----  |  ----  |
 | xy | 2021/08/03 | rank改版 | https://li-guanlong.github.io/xy-rank/phoneRank.html |
 | doyo box | 2021/07/06 | 首页改版 新增会员功能 | https://li-guanlong.github.io/doyo-box/ |
+| doyo 单机（m端） | 2021/08/27 | 新增单机模块 | https://li-guanlong.github.io/doyo-danji/index.html |
