@@ -1,6 +1,6 @@
 ### Welcome to Mr.boring's github experimental garden
 
-#### 个人搭建的博客半成品入口  --  <https://li-guanlong.github.io/dist/index.html>
+#### new   --  <https://li-guanlong.github.io/wap/home.html>
 
 |  domain  |  date  |  describe  |  href  |
 |  ----  |  ----  |  ----  |  ----  |
