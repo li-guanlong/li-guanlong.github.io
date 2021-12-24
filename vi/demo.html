@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vi图片上传预览</title>
+  <link rel="stylesheet" href="/vi_1.0.0/vi_1.0.0.css">
+  <style>
+    h3 {
+      margin: 100px 0 20px 370px;
+    }
+    #vi-box {
+      width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h3>Vi图片上传预览</h1>
+  <div id="vi-box">
+    <!-- <div class="vi-upload" id="vi-content1">
+      <input type="file" multiple="multiple" id="vi-upload-1">
+      <div class="vi-first-screen">
+        <i class="vi-icon-cloud"></i>
+        <p class="vi-tip">点击或将文件拖拽到这里上传</p>
+      </div>
+    </div>
+    <div class="hide" id="vi-content2">
+      <div class="vi-uploadListBox" id="viUploadListBox"></div>
+      <div class="vi-uploadMsgBox">
+        <button type="button">
+          <span>开始上传</span>
+        </button>
+        <div>当前选中<span> 1 </span>张图 | 总计<span> 0.056 </span>MB | 已上传<span> 0 </span>张图 | 共消耗<span> 0.000 </span>MB流量</div>
+      </div>
+    </div> -->
+  </div>
+</body>
+<script src="/vi_1.0.0/vi_1.0.0.js"></script>
+<script>
+  const viLog = new VI({
+    'limitType': 'jpg|jpeg|png',
+    'limitSize': '2',
+    'uploading': true,
+    'callback': function(uploadFiles) {
+      console.log(uploadFiles)
+    }
+  })
+
+  console.log(viLog)
+</script>
+</html>
