@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vi图片上传预览</title>
+  <link rel="stylesheet" href="./vi_1.0.0/vi_static/vi_1.0.0.css">
+  <style>
+    h3 {
+      margin: 100px 0 20px 370px;
+    }
+    #vi-box {
+      width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h3>Vi图片上传预览</h1>
+  <div id="vi-box"></div>
+</body>
+<script src="./vi_1.0.0/vi_js/vi_1.0.0.js"></script>
+<script>
+  const viLog = new VI({
+    'limitType': 'jpg|jpeg|png',
+    'limitSize': '2',
+    'uploading': true,
+    'callback': function(uploadFiles) {
+      console.log(uploadFiles)
+    }
+  })
+
+  console.log(viLog)
+</script>
+</html>
