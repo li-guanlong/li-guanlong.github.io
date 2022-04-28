@@ -1255,7 +1255,7 @@ footer p:nth-child(2) { width: 7rem; font-size: 0.22rem; line-height: 0.36rem; c
 
 /* ztd */
 .ztdetail{overflow: hidden;margin-bottom: .5rem;}
-.ztd_1{background: url(../img/bg_topicdtl.png) no-repeat;background-size: 7.5rem 6.8rem;display: block;width: 7.5rem;height: 6.8rem;margin-top: -2.46rem;overflow: hidden;}
+.ztd_1{background: url(../img/yy.png) no-repeat;background-size: 7.5rem 6.8rem;display: block;width: 7.5rem;height: 6.8rem;margin-top: -2.46rem;overflow: hidden;}
 .ztd_1 .info{width: 3.78rem;height: 1.16rem;border: .1rem solid rgba(255, 255, 255, .8);margin: 2.94rem 1.76rem 0;}
 .ztd_1 .info h3{font-size: .48rem;color: #fff;font-weight: 600;line-height: .5rem;margin-top: .12rem;text-align: center;white-space: nowrap;overflow: hidden;}
 .ztd_1 .info p{font-size: .22rem;color: #fff;line-height: .24rem;margin-top: .08rem;text-align: center;position: relative;}
