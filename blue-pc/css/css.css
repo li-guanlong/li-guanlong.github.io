@@ -4,7 +4,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 .clearfix{margin-right:auto;margin-left:auto;*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}
 b,em,i{font-style:normal;font-weight:normal;}
 body{margin:0;font-family:"Microsoft Yahei",Arial,Tahoma,Helvetica,"SimSun","Hiragino Sans GB",sans-serif;font-size:14px;line-height:20px;color:#333;position:relative;}
-html,body{width:100%;min-width:1200px;margin:0 auto;overflow-x:hidden;min-height:1000px;background-color:#ebebeb;}
+html,body{width:100%;min-width:1200px;margin:0 auto;overflow-x:hidden;min-height:1000px;background-color:rgba(246, 247, 251, 0.39);}
 button,input,select,textarea,th{background:#fff;font-size:12px;line-height:1.5em;font-family:"Microsoft Yahei",Arial,Tahoma,Helvetica,"SimSun","Hiragino Sans GB",sans-serif;}
 a{color:#333;text-decoration:none;}
 a:hover,a:focus{transition:color 150ms ease-in 0ms,background-color 150ms ease-in 150ms;}
@@ -233,6 +233,9 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 }
 .cs_2 .top .first:hover .mid>p:nth-child(1) { 
   color: #FFD741;
+}
+.cs_2 .top .first:hover .down {
+  background: #FF844C;
 }
 .cs_2 ul {
   padding-bottom: 10px;
@@ -759,7 +762,7 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
   opacity: 0;
 }
 /* gameList */
-.softwareSort { overflow: hidden; background-color: #fff; }
+.softwareSort { overflow: hidden; background-color: #fff;border-radius: 12px; }
 .softwareSort li { float: left; }
 .softwareSort li a { display: block; padding-left: 86px; width: 114px; height: 90px; overflow: hidden; white-space: nowrap; position: relative; transition: background ease .3s; }
 .softwareSort li a>p:nth-child(2) { width: 66px; text-align: center; font-size: 16px; height: 20px; line-height: 20px; color: #333333; opacity: 0.7; margin: 28px 0 4px 0; }
@@ -768,30 +771,30 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 .softwareSort li:nth-child(1) a i { width: 66px; height: 80px; background-position: -319px -271px; }
 .softwareSort li:nth-child(1) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -411px -271px; }
 .softwareSort li:nth-child(2) a i { width: 70px; height: 64px; background-position: -648px -273px; }
-.softwareSort li:nth-child(2) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -726px -273px; }
+.softwareSort li:nth-child(2) a:hover i, .softwareSort li:nth-child(2) a.current i { background-position: -726px -273px; }
 .softwareSort li:nth-child(3) a i { width: 68px; height: 73px; background-position: -452px -188px; }
-.softwareSort li:nth-child(3) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -543px -188px; }
+.softwareSort li:nth-child(3) a:hover i, .softwareSort li:nth-child(3) a.current i { background-position: -543px -188px; }
 .softwareSort li:nth-child(4) a i { width: 66px; height: 72px; background-position: -3px -362px; }
-.softwareSort li:nth-child(4) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -78px -362px; }
+.softwareSort li:nth-child(4) a:hover i, .softwareSort li:nth-child(4) a.current i { background-position: -78px -362px; }
 .softwareSort li:nth-child(5) a i { width: 70px; height: 78px; background-position: -718px -102px; }
-.softwareSort li:nth-child(5) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -8px -187px; }
+.softwareSort li:nth-child(5) a:hover i, .softwareSort li:nth-child(5) a.current i { background-position: -8px -187px; }
 .softwareSort li:nth-child(6) a i { width: 64px; height: 74px; background-position: -629px -191px; }
-.softwareSort li:nth-child(6) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -724px -189px; }
+.softwareSort li:nth-child(6) a:hover i, .softwareSort li:nth-child(6) a.current i { background-position: -724px -189px; }
 .softwareSort li:nth-child(7) a i { width: 62px; height: 78px; background-position: -498px -271px; }
-.softwareSort li:nth-child(7) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -576px -270px; }
+.softwareSort li:nth-child(7) a:hover i, .softwareSort li:nth-child(7) a.current i { background-position: -576px -270px; }
 .softwareSort li:nth-child(8) a i { width: 68px; height: 72px; background-position: -178px -362px; }
-.softwareSort li:nth-child(8) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -273px -362px; }
+.softwareSort li:nth-child(8) a:hover i, .softwareSort li:nth-child(8) a.current i { background-position: -273px -362px; }
 .softwareSort li:nth-child(9) a i { width: 68px; height: 68px; background-position: -96px -188px; }
-.softwareSort li:nth-child(9) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -183px -188px; }
+.softwareSort li:nth-child(9) a:hover i, .softwareSort li:nth-child(9) a.current i { background-position: -183px -188px; }
 .softwareSort li:nth-child(10) a i { width: 64px; height: 72px; background-position: -277px -188px; }
-.softwareSort li:nth-child(10) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -362px -188px; }
+.softwareSort li:nth-child(10) a:hover i, .softwareSort li:nth-child(10) a.current i { background-position: -362px -188px; }
 .softwareSort li:nth-child(11) a i { width: 66px; height: 74px; background-position: -352px -100px; }
-.softwareSort li:nth-child(11) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -439px -100px; }
+.softwareSort li:nth-child(11) a:hover i, .softwareSort li:nth-child(11) a.current i { background-position: -439px -100px; }
 .softwareSort li:nth-child(12) a i { width: 72px; height: 74px; background-position: -8px -99px; }
-.softwareSort li:nth-child(12) a:hover i, .softwareSort li:nth-child(1) a.current i { background-position: -92px -98px; }
-.softwareSort li a:hover { background: linear-gradient(270deg, rgba(25, 51, 255, 0) 0%, #1933FF 100%); }
-.softwareSort li a:hover>p:nth-child(2) {color: #fff;}
-.softwareSort li a:hover>p:nth-child(3) {color: #fff;opacity: .5;}
+.softwareSort li:nth-child(12) a:hover i, .softwareSort li:nth-child(12) a.current i { background-position: -92px -98px; }
+.softwareSort li a:hover, .softwareSort li a.current { background: linear-gradient(270deg, rgba(25, 51, 255, 0) 0%, #1933FF 100%); }
+.softwareSort li a:hover>p:nth-child(2), .softwareSort li a.current>p:nth-child(2) {color: #fff;}
+.softwareSort li a:hover>p:nth-child(3), .softwareSort li a.current>p:nth-child(3) {color: #fff;opacity: .5;}
 .softwareFilter { height: 42px; padding: 16px 30px 0 18px; border-radius: 6px; background: #fff; margin: 20px 0; }
 .softwareFilter div>span { float: left; height: 26px; line-height: 26px; padding: 0 15px; opacity: 1; border-radius: 13px; margin-right: 15px; font-size: 13px; font-weight: bold; color: #333333; cursor: pointer; transition: background ease .3s; }
 .softwareFilter div>span.current { background: rgba(255, 215, 65)!important; }
@@ -801,7 +804,7 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 .softwareList { padding-bottom: 20px; }
 .softwareList ul li { float: left; margin: 0 24px 20px 0; }
 .softwareList ul li:nth-child(6n) { margin-right: 0; }
-.softwareList ul li a { display: block; width: 180px; height: 252px; background: rgba(255, 255, 255, 0.39); opacity: 1; border-radius: 6px; position: relative; overflow: hidden; transition: box-shadow ease .3s; }
+.softwareList ul li a { display: block; width: 180px; height: 252px; background: rgba(255, 255, 255); opacity: 1; border-radius: 6px; position: relative; overflow: hidden; transition: box-shadow ease .3s; }
 .softwareList ul li a img { display: block; width: 120px; height: 120px; opacity: 1; border-radius: 30px; padding-top: 25px; margin: 0 auto 10px; }
 .softwareList ul li a>p { margin: 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; }
 .softwareList ul li a>p:nth-child(2) { height: 18px; line-height: 18px; font-size: 14px; color: #000000; }
@@ -813,27 +816,33 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 .softwareList ul li a:hover { box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.2); }
 .softwareList ul li a:hover>p:nth-child(2) { font-weight: bold; color: #1933FF; }
 .softwareList ul li a:hover div { transform: translateY(-48px) }
+.softwareList ul:nth-child(1) li a>p:nth-child(4) {
+  color: #23C268;
+}
+.softwareList ul:nth-child(2) li a>p:nth-child(4) {
+  color: #1933FF;
+}
 /* appList */
 .softwareSort_app li:nth-child(2) a i { width: 78px; height: 76px; background-position: -694px -597px; }
-.softwareSort_app li:nth-child(2) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -3px -685px; }
+.softwareSort_app li:nth-child(2) a:hover i, .softwareSort_app li:nth-child(2) a.current i { background-position: -3px -685px; }
 .softwareSort_app li:nth-child(3) a i { width: 64px; height: 72px; background-position: -725px -440px; }
-.softwareSort_app li:nth-child(3) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -2px -520px; }
+.softwareSort_app li:nth-child(3) a:hover i, .softwareSort_app li:nth-child(3) a.current i { background-position: -2px -520px; }
 .softwareSort_app li:nth-child(4) a i { width: 66px; height: 74px; background-position: -589px -518px; }
-.softwareSort_app li:nth-child(4) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -662px -519px; }
+.softwareSort_app li:nth-child(4) a:hover i, .softwareSort_app li:nth-child(4) a.current i { background-position: -662px -519px; }
 .softwareSort_app li:nth-child(5) a i { width: 70px; height: 80px; background-position: -520px -599px; }
-.softwareSort_app li:nth-child(5) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -609px -599px; }
+.softwareSort_app li:nth-child(5) a:hover i, .softwareSort_app li:nth-child(5) a.current i { background-position: -609px -599px; }
 .softwareSort_app li:nth-child(6) a i { width: 74px; height: 78px; background-position: -462px -439px; }
-.softwareSort_app li:nth-child(6) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -552px -439px; }
+.softwareSort_app li:nth-child(6) a:hover i, .softwareSort_app li:nth-child(6) a.current i { background-position: -552px -439px; }
 .softwareSort_app li:nth-child(7) a i { width: 64px; height: 70px; background-position: -267px -520px; }
-.softwareSort_app li:nth-child(7) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -347px -520px; }
+.softwareSort_app li:nth-child(7) a:hover i, .softwareSort_app li:nth-child(7) a.current i { background-position: -347px -520px; }
 .softwareSort_app li:nth-child(8) a i { width: 64px; height: 76px; background-position: -427px -518px; }
-.softwareSort_app li:nth-child(8) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -508px -518px; }
+.softwareSort_app li:nth-child(8) a:hover i, .softwareSort_app li:nth-child(8) a.current i { background-position: -508px -518px; }
 .softwareSort_app li:nth-child(9) a i { width: 62px; height: 75px; background-position: -554px -359px; }
-.softwareSort_app li:nth-child(9) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -627px -359px; }
+.softwareSort_app li:nth-child(9) a:hover i, .softwareSort_app li:nth-child(9) a.current i { background-position: -627px -359px; }
 .softwareSort_app li:nth-child(10) a i { width: 66px; height: 70px; background-position: -101px -687px; }
-.softwareSort_app li:nth-child(10) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -2px -599px; }
+.softwareSort_app li:nth-child(10) a:hover i, .softwareSort_app li:nth-child(10) a.current i { background-position: -2px -599px; }
 .softwareSort_app li:nth-child(11) a i { width: 77px; height: 74px; background-position: -85px -520px; }
-.softwareSort_app li:nth-child(11) a:hover i, .softwareSort_app li:nth-child(1) a.current i { background-position: -174px -520px; }
+.softwareSort_app li:nth-child(11) a:hover i, .softwareSort_app li:nth-child(11) a.current i { background-position: -174px -520px; }
 /* zx */
 .zxCont_left {
   float: left;
@@ -1775,8 +1784,8 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
   top: 0;
   width: 23px;
   height: 90px;
-  background: rgba(212, 212, 212, 0.39);
   border-radius: 0px 6px 6px 0px;
+  background: #EDEDED;
   font-size: 12px;
   color: #33333390;
   padding: 28px 10px 0;
@@ -1786,14 +1795,14 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 .indexCont_1 .change i {
   display: inline-block;
   width: 14px;
-  height: 14px;
-  background-position: -682px -24px;
+  height: 63px;
+  background-position: -776px -835px;
 }
 .indexCont_1 .gameBox, .indexCont_1 .appBox {
   width: 1104px;
   height: 118px;
   background: rgba(255, 255, 255);
-  border-radius: 6px;
+  border-radius: 6px 0 0 6px;
   margin: 0 43px 0 54px;
   position: relative;
   z-index: 1;
@@ -1860,13 +1869,17 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
   top: 23px;
   left: 0;
   margin: auto;
+  background:url(../img/icon.png) no-repeat;background-size:800px 1200px;
   width: 512px;
-  border-bottom: 2px dashed #aaa;
+  height: 2px;
+  background-position: 0 -1192px;
 }
 .indexCont_2 .indexSlide .swiper-pagination div {
   width: 66px;
   margin-right: 34px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .indexCont_2 .indexSlide .swiper-pagination div p {
   font-weight: bold;
@@ -2483,7 +2496,20 @@ footer>p:nth-child(3) { height: 100px;line-height: 100px; }
 }
 .detailCont_left .config i {
   display: inline-block;
-  margin: 0 3px 0 10px;
+  width: 14px;
+  height: 14px;
+  margin: 2px 2px 0 10px;
+  vertical-align: top;
+}
+.detailCont_left .config i:nth-child(1) {
+  background-position: -590px -883px;
+  margin-left: 0;
+}
+.detailCont_left .config i:nth-child(2) {
+  background-position: -645px -881px;
+}
+.detailCont_left .config i:nth-child(3) {
+  background-position: -618px -882px;
 }
 .detailCont_left3 {
   width: 810px;
