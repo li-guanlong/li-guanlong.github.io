@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高级设备指纹系统</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fingerprintjs2@2.1.4/dist/fingerprint2.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="container mx-auto px-4 py-12 max-w-3xl">
+    <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+      <div class="bg-gradient-to-r from-blue-600 to-purple-700 p-6 text-white">
+        <h1 class="text-3xl font-bold"><i class="fas fa-fingerprint mr-3"></i>设备指纹系统</h1>
+        <p class="mt-2 opacity-90">生成当前设备的唯一识别标识</p>
+        <div style="
+            float: right;
+            width: 160px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            border: 1px solid #fff;
+            margin-top: -54px;
+            border-radius: 10px;
+            cursor: pointer;
+        " class="mt-2-btn opacity-90" id="permissionVerification">点击进行权限判定</div>
+      </div>
+      
+      <div class="p-6 space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- 基础指纹 -->
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-blue-600">基础指纹</h3>
+            <div id="basicFingerprint" class="text-sm text-gray-700 space-y-2">
+              <p>加载中...</p>
+            </div>
+          </div>
+          
+          <!-- 高级指纹 -->
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-purple-600">高级指纹</h3>
+            <div id="advancedFingerprint" class="text-sm text-gray-700 space-y-2">
+              <p>加载中...</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 综合结果 -->
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <h3 class="font-semibold text-lg mb-3 text-blue-800">设备唯一ID</h3>
+          <div class="flex items-center">
+            <input type="text" id="deviceId" readonly 
+                   class="flex-1 bg-white px-4 py-2 rounded-l-lg border border-blue-300 font-mono text-blue-900">
+            <button onclick="copyToClipboard()" 
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-lg transition">
+              复制
+            </button>
+          </div>
+          <p class="mt-2 text-sm text-blue-700">该ID将存储在本地，用于识别您的设备</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 生成基础指纹（组合浏览器特征）
+    function generateBasicFingerprint() {
+      const components = {
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        platform: navigator.platform,
+        screen: `${window.screen.width}x${window.screen.height}`,
+        colorDepth: window.screen.colorDepth,
+        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        hardwareConcurrency: navigator.hardwareConcurrency || 'unknown',
+        deviceMemory: navigator.deviceMemory || 'unknown'
+      };
+      
+      // 显示基础指纹信息
+      let html = '';
+      for (const [key, value] of Object.entries(components)) {
+        html += `<p><span class="font-medium">${key}:</span> <span class="font-mono">${value}</span></p>`;
+      }
+      document.getElementById('basicFingerprint').innerHTML = html;
+      
+      // 生成哈希值
+      let hash = 0;
+      const str = JSON.stringify(components);
+      for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = (hash << 5) - hash + char;
+        hash |= 0;
+      }
+      return `basic_${Math.abs(hash).toString(36)}`;
+    }
+
+    // 使用FingerprintJS2生成高级指纹
+    function generateAdvancedFingerprint() {
+      return new Promise(resolve => {
+        if (window.requestIdleCallback) {
+          requestIdleCallback(() => {
+            Fingerprint2.get(components => {
+              displayAdvancedComponents(components);
+              const values = components.map(c => {
+                // if(c.key !== 'userAgent') {
+                  return c.value
+                // }
+              });
+              console.log(values);
+              
+              const hash = Fingerprint2.x64hash128(values.join(''), 31);
+              resolve(`adv_${hash}`);
+            });
+          });
+        } else {
+          setTimeout(() => {
+            Fingerprint2.get(components => {
+              displayAdvancedComponents(components);
+              const values = components.map(c => c.value);
+              const hash = Fingerprint2.x64hash128(values.join(''), 31);
+              resolve(`adv_${hash}`);
+            });
+          }, 500);
+        }
+      });
+    }
+
+    // 显示高级指纹组件
+    function displayAdvancedComponents(components) {
+      console.log(components);
+      
+      let html = '';
+      components.forEach(component => {
+        // if(component.key !== 'userAgent') {
+
+          html += `<p><span class="font-medium">${component.key}:</span> 
+                  <span class="font-mono text-xs">${String(component.value).substring(0, 50)}...</span></p>`;
+        // }
+      });
+      // console.log(html);
+      document.getElementById('advancedFingerprint').innerHTML = html;
+    }
+
+    // 生成最终设备ID（组合基础+高级指纹）
+    async function generateDeviceId() {
+      const basicId = generateBasicFingerprint();
+      const advancedId = await generateAdvancedFingerprint();
+      
+      // 组合生成最终ID并存储
+      const finalId = `device_${basicId}_${advancedId}`;
+      localStorage.setItem('deviceUniqueId', finalId);
+      document.getElementById('deviceId').value = finalId;
+      return finalId
+    }
+
+    // 复制到剪贴板
+    function copyToClipboard() {
+      const copyText = document.getElementById('deviceId')
+      copyText.select()
+      document.execCommand('copy');
+      alert('设备ID已复制到剪贴板');
+    }
+
+    // 初始化
+    window.addEventListener('load', generateDeviceId);
+
+    const btn = document.getElementById('permissionVerification')
+
+    const AuthorizationIds = ['device_basic_spnj5m_adv_b3b209acf43abdb6bab392767d16bdc0']
+
+    btn.onclick = function() {
+      
+      const testId = localStorage.getItem('deviceUniqueId')
+      console.log(1111111111, testId);
+      if(AuthorizationIds.includes(testId)) {
+        alert('当前设备已授权！')
+      } else {
+        alert('当前设备未被授权！')
+      }
+      
+    }
+  </script>
+</body>
+</html>
