@@ -95,6 +95,7 @@
       return `basic_${Math.abs(hash).toString(36)}`;
     }
 
+    const ignoreComponents = ['screenResolution', 'plugins', 'availableScreenResolution']
     // 使用FingerprintJS2生成高级指纹
     function generateAdvancedFingerprint() {
       return new Promise(resolve => {
@@ -103,7 +104,7 @@
             Fingerprint2.get(components => {
               displayAdvancedComponents(components);
               const values = components.map(c => {
-                if(!(c.key === 'screenResolution' || c.key === 'availableScreenResolution')) {
+                if(!ignoreComponents.includes(c.key)) {
                   return c.value
                 }
               });
@@ -118,7 +119,7 @@
             Fingerprint2.get(components => {
               displayAdvancedComponents(components);
               const values = components.map(c => {
-                if(!(c.key === 'screenResolution' || c.key === 'availableScreenResolution')) {
+                if(!ignoreComponents.includes(c.key)) {
                   return c.value
                 }
               });
@@ -171,7 +172,7 @@
 
     const btn = document.getElementById('permissionVerification')
 
-    const AuthorizationIds = ['device_basic_2uh0g6_adv_5c22de176f413135414d5088df21f3f2']
+    const AuthorizationIds = ['device_basic_2uh0g6_adv_beba61dfbabeb189fc690f25c5e655c3']
 
     btn.onclick = function() {
       
