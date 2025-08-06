@@ -103,9 +103,9 @@
             Fingerprint2.get(components => {
               displayAdvancedComponents(components);
               const values = components.map(c => {
-                // if(c.key !== 'userAgent') {
+                if(!(c.key === 'screenResolution' || c.key === 'availableScreenResolution')) {
                   return c.value
-                // }
+                }
               });
               console.log(values);
               
@@ -117,7 +117,11 @@
           setTimeout(() => {
             Fingerprint2.get(components => {
               displayAdvancedComponents(components);
-              const values = components.map(c => c.value);
+              const values = components.map(c => {
+                if(!(c.key === 'screenResolution' || c.key === 'availableScreenResolution')) {
+                  return c.value
+                }
+              });
               const hash = Fingerprint2.x64hash128(values.join(''), 31);
               resolve(`adv_${hash}`);
             });
@@ -167,7 +171,7 @@
 
     const btn = document.getElementById('permissionVerification')
 
-    const AuthorizationIds = ['device_basic_spnj5m_adv_dd0d925613f241794249fd7a15e52225']
+    const AuthorizationIds = ['device_basic_5p20yd_adv_5c22de176f413135414d5088df21f3f2']
 
     btn.onclick = function() {
       
